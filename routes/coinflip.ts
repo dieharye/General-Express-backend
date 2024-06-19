@@ -3,7 +3,6 @@ import { body, validationResult } from "express-validator";
 import mongoose from "mongoose";
 import express from 'express';
 import crypto from "crypto"
-
 import { AuthenticatedRequest } from "../controllers/Account";
 import Account from "../models/account"
 import item from "../models/item";
@@ -14,7 +13,7 @@ import AuthenticateToken from "../controllers/Authenticate";
 
 const router = express.Router();
 
-/* GET users listing. */
+/* GET users list. */
 router.get('/', function (_req: Request, res: Response) {
     res.jsonp({
         success: true,
@@ -206,4 +205,4 @@ router.post('/create', AuthenticateToken,
     })
 
 const CoinflipRouter = router;
-export default CoinflipRouter
+export default CoinflipRouter;

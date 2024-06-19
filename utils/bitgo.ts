@@ -24,9 +24,8 @@ class Bitgo {
 
     async BitgoSession() {
         const result = await bitgo.session();
-        console.dir(result);
 
-        return result
+        return result;
     }
 }
 
