@@ -201,7 +201,7 @@ router.post('/create', AuthenticateToken,
         session.endSession()
         return res.json({
             success: false,
-            message: "Something went wrong",
+            message: "Something went wrong.",
         })
     })
 
